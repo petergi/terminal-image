@@ -1,22 +1,24 @@
 {
 	"name": "terminal-image",
-	"version": "0.1.0",
+	"version": "1.2.1",
 	"description": "Display images in the terminal",
 	"license": "MIT",
 	"repository": "sindresorhus/terminal-image",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"engines": {
-		"node": ">=8"
+		"node": ">=10"
 	},
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava && tsd"
 	},
 	"files": [
-		"index.js"
+		"index.js",
+		"index.d.ts"
 	],
 	"keywords": [
 		"terminal",
@@ -36,15 +38,22 @@
 		"jpeg",
 		"display",
 		"show",
-		"pixels"
+		"pixels",
+		"gif",
+		"animation",
+		"sequence"
 	],
 	"dependencies": {
-		"chalk": "^2.4.1",
-		"jimp": "^0.2.28",
-		"term-img": "^2.1.0"
+		"chalk": "^4.0.0",
+		"jimp": "^0.14.0",
+		"log-update": "^4.0.0",
+		"render-gif": "^2.0.4",
+		"term-img": "^5.0.0"
 	},
 	"devDependencies": {
-		"ava": "*",
-		"xo": "*"
+		"@types/node": "^13.13.5",
+		"ava": "^1.4.1",
+		"tsd": "^0.11.0",
+		"xo": "^0.30.0"
 	}
 }
